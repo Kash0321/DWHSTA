@@ -2,4 +2,13 @@
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
-/src/.vs/DWHSTA/v15
+/src/.vs
+/src/DWHSTA/DWHSTA/bin
+/src/DWHSTA/DWHSTA/obj
+/src/DWHSTA/DWHSTA.Android/bin
+/src/DWHSTA/DWHSTA.Android/obj
+/src/DWHSTA/DWHSTA.iOS/obj
+/src/DWHSTA/DWHSTA.UWP/bin
+/src/DWHSTA/DWHSTA.UWP/obj
+/src/packages
+/.vs
