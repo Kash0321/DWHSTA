@@ -41,6 +41,15 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\BusinessRole.cs" />
+    <Compile Include="Model\EntityBase.cs" />
+    <Compile Include="Model\MenuItem.cs" />
+    <Compile Include="Model\MenuItemCategory.cs" />
+    <Compile Include="Model\Table.cs" />
+    <Compile Include="Model\TableRange.cs" />
+    <Compile Include="Model\TableStatus.cs" />
+    <Compile Include="Model\Waiter.cs" />
+    <Compile Include="Model\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
