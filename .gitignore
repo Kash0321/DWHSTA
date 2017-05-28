@@ -3,12 +3,12 @@
 ################################################################################
 
 /src/.vs
-/src/DWHSTA/DWHSTA/bin
-/src/DWHSTA/DWHSTA/obj
-/src/DWHSTA/DWHSTA.Android/bin
-/src/DWHSTA/DWHSTA.Android/obj
-/src/DWHSTA/DWHSTA.iOS/obj
-/src/DWHSTA/DWHSTA.UWP/bin
-/src/DWHSTA/DWHSTA.UWP/obj
+/src/DWHSTA.Mobile/DWHSTA/bin
+/src/DWHSTA.Mobile/DWHSTA/obj
+/src/DWHSTA.Mobile/DWHSTA.Android/bin
+/src/DWHSTA.Mobile/DWHSTA.Android/obj
+/src/DWHSTA.Mobile/DWHSTA.iOS/obj
+/src/DWHSTA.Mobile/DWHSTA.UWP/bin
+/src/DWHSTA.Mobile/DWHSTA.UWP/obj
 /src/packages
 /.vs
