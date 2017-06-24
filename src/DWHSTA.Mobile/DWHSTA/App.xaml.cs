@@ -13,7 +13,7 @@ namespace DWHSTA
         {
             InitializeComponent();
 
-            MainPage = new DWHSTA.MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

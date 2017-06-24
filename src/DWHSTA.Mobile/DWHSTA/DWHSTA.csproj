@@ -48,7 +48,6 @@
     <Compile Include="Model\Table.cs" />
     <Compile Include="Model\TableRange.cs" />
     <Compile Include="Model\TableStatus.cs" />
-    <Compile Include="Model\Waiter.cs" />
     <Compile Include="Model\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

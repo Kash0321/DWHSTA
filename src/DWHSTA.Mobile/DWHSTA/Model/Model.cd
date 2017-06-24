@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DWHSTA.Model.EntityBase">
+    <Position X="9.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\EntityBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DWHSTA.Model.MenuItem">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAAAAAAAACAAAAAABAAAAAAAAAACAA=</HashCode>
+      <FileName>Model\MenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DWHSTA.Model.MenuItemCategory">
+    <Position X="4" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAAAAAAAAAAAAAAABAAAAAAAAAgAAA=</HashCode>
+      <FileName>Model\MenuItemCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DWHSTA.Model.Table">
+    <Position X="9" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Table.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DWHSTA.Model.TableRange">
+    <Position X="6.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAACAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TableRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DWHSTA.Model.Worker">
+    <Position X="13.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DWHSTA.Model.BusinessRole">
+    <Position X="17" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAIAAAAAAAAAAAAAAEAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\BusinessRole.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DWHSTA.Model.TableStatus">
+    <Position X="17" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABCAAAAAAAAAAAQAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\TableStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

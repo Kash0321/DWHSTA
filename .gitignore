@@ -538,3 +538,4 @@ project.lock.json
 /src/DWHSTA.Mobile/DWHSTA.UWP/obj
 /src/packages
 /.vs
+/src/DWSHTA.WebApi/Properties/PublishProfiles
