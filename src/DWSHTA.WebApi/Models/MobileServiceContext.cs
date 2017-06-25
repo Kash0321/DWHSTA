@@ -26,7 +26,9 @@ namespace DWSHTA.WebApi.Models
         {
         }
 
-        public DbSet<TodoItem> TodoItems { get; set; }
+        public DbSet<MenuItem> MenuItems { get; set; }
+
+        public DbSet<TableOrder> TableOrders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

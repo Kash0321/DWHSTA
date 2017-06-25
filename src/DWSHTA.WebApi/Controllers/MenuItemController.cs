@@ -9,42 +9,42 @@ using DWSHTA.WebApi.Models;
 
 namespace DWSHTA.WebApi.Controllers
 {
-    public class TodoItemController : TableController<TodoItem>
+    public class MenuItemController : TableController<MenuItem>
     {
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
             MobileServiceContext context = new MobileServiceContext();
-            DomainManager = new EntityDomainManager<TodoItem>(context, Request, enableSoftDelete: true);
+            DomainManager = new EntityDomainManager<MenuItem>(context, Request, enableSoftDelete: true);
         }
 
-        // GET tables/TodoItem
-        public IQueryable<TodoItem> GetAllTodoItems()
+        // GET tables/MenuItem
+        public IQueryable<MenuItem> GetAllMenuItems()
         {
             return Query();
         }
 
-        // GET tables/TodoItem/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public SingleResult<TodoItem> GetTodoItem(string id)
+        // GET tables/MenuItem/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public SingleResult<MenuItem> GetMenuItem(string id)
         {
             return Lookup(id);
         }
 
-        // PATCH tables/TodoItem/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task<TodoItem> PatchTodoItem(string id, Delta<TodoItem> patch)
+        // PATCH tables/MenuItem/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public Task<MenuItem> PatchMenuItem(string id, Delta<MenuItem> patch)
         {
             return UpdateAsync(id, patch);
         }
 
-        // POST tables/TodoItem
-        public async Task<IHttpActionResult> PostTodoItem(TodoItem item)
+        // POST tables/MenuItem
+        public async Task<IHttpActionResult> PostMenuItem(MenuItem item)
         {
-            TodoItem current = await InsertAsync(item);
+            MenuItem current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);
         }
 
-        // DELETE tables/TodoItem/48D68C86-6EA6-4C25-AA33-223FC9A27959
-        public Task DeleteTodoItem(string id)
+        // DELETE tables/MenuItem/48D68C86-6EA6-4C25-AA33-223FC9A27959
+        public Task DeleteMenuItem(string id)
         {
             return DeleteAsync(id);
         }

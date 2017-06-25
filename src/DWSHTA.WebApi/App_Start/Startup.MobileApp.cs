@@ -48,15 +48,16 @@ namespace DWSHTA.WebApi
     {
         protected override void Seed(MobileServiceContext context)
         {
-            List<TodoItem> todoItems = new List<TodoItem>
+            List<MenuItem> menuItems = new List<MenuItem>
             {
-                new TodoItem { Id = Guid.NewGuid().ToString(), Text = "First item", Complete = false },
-                new TodoItem { Id = Guid.NewGuid().ToString(), Text = "Second item", Complete = false }
+                new MenuItem { Id = Guid.NewGuid().ToString(), Title = "Chocolate normal",  Amount= 1.50m, Description = "Taza de chocolate de tamaño normal", Image = string.Empty },
+                new MenuItem { Id = Guid.NewGuid().ToString(), Title = "Churro",  Amount= 0.50m, Description = "Churro (unidad)", Image = string.Empty },
+                new MenuItem { Id = Guid.NewGuid().ToString(), Title = "Chocolate pequeño",  Amount= 1m, Description = "Taza de chocolate de tamaño pequeño", Image = string.Empty }
             };
 
-            foreach (TodoItem todoItem in todoItems)
+            foreach (MenuItem menuItem in menuItems)
             {
-                context.Set<TodoItem>().Add(todoItem);
+                context.Set<MenuItem>().Add(menuItem);
             }
 
             base.Seed(context);

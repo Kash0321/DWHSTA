@@ -45,7 +45,7 @@
     <Compile Include="Model\EntityBase.cs" />
     <Compile Include="Model\MenuItem.cs" />
     <Compile Include="Model\MenuItemCategory.cs" />
-    <Compile Include="Model\Table.cs" />
+    <Compile Include="Model\TableOrder.cs" />
     <Compile Include="Model\TableRange.cs" />
     <Compile Include="Model\TableStatus.cs" />
     <Compile Include="Model\Worker.cs" />

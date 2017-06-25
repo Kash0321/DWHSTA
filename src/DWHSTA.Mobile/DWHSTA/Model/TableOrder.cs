@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace DWHSTA.Model
 {
     /// <summary>
-    /// Represents an active table
+    /// Represents an active table order
     /// </summary>
-    public class Table : EntityBase
+    public class TableOrder : EntityBase
     {
         /// <summary>
         /// Pax number
@@ -21,6 +21,14 @@ namespace DWHSTA.Model
         /// </summary>
         public Worker Worker { get; set; }
 
+        /// <summary>
+        /// Items served or to serve
+        /// </summary>
+        public ICollection<MenuItem> Items { get; protected set; }
 
+        /// <summary>
+        /// Table status regarding current order
+        /// </summary>
+        public TableStatus Status { get; set; }
     }
 }
