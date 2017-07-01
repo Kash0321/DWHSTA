@@ -30,6 +30,8 @@ namespace DWSHTA.WebApi.Models
 
         public DbSet<TableOrder> TableOrders { get; set; }
 
+        public DbSet<TableOrderItem> TableOrderItems { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Add(
