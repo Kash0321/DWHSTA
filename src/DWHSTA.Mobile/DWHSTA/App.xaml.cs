@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DWHSTA.Main;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace DWHSTA
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainView());
         }
 
         protected override void OnStart()

@@ -2,12 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DWHSTA"
-             x:Class="DWHSTA.MainPage"
+             x:Class="DWHSTA.Main.MainView"
              Title="DWSHTA">
-
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Name="StartBtn" Text="New" Command="{Binding StartCommand}" />
-    </ContentPage.ToolbarItems>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -20,7 +16,7 @@
         </Grid.ColumnDefinitions>
         <Grid.Children>
             <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
-                <Button  Text="Sala" Command="{Binding RoomAccessCommand}"/>
+                <Button  Text="Sala" Command="{Binding NavigateToRoomCommand}"/>
             </StackLayout>
             <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
                 <Button Text="Cocina" />
