@@ -65,7 +65,7 @@ namespace DWHSTA.Services
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("An error syncing occurred. That is OK, as we have offline sync:" + ex.Message);
+                Debug.WriteLine("An error syncing occurred. That is OK, as we have offline sync: " + ex.Message);
             }
         }
     }

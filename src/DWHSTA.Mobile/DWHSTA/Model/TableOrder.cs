@@ -12,6 +12,11 @@ namespace DWHSTA.Model
     public class TableOrder : EntityBase
     {
         /// <summary>
+        /// Table number
+        /// </summary>
+        public int Table { get; set; }
+
+        /// <summary>
         /// Pax number
         /// </summary>
         public int Pax { get; set; }
@@ -19,16 +24,11 @@ namespace DWHSTA.Model
         /// <summary>
         /// Worker mainly assigned to the table
         /// </summary>
-        public Worker Worker { get; set; }
-
-        /// <summary>
-        /// Items served or to serve
-        /// </summary>
-        public ICollection<MenuItem> Items { get; protected set; }
+        public string Worker { get; set; }
 
         /// <summary>
         /// Table status regarding current order
         /// </summary>
-        public TableStatus Status { get; set; }
+        //public TableStatus Status { get; set; }
     }
 }
