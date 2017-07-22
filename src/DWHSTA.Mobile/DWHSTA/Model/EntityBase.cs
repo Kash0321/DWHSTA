@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,19 +25,22 @@ namespace DWHSTA.Model
         /// </summary>
         public string Id { get; set; }
 
-        ///// <summary>
-        ///// Stores the creation moment
-        ///// </summary>
-        //public DateTimeOffset CreatedAt { get; set; }
+        /// <summary>
+        /// Stores the creation moment
+        /// </summary>
+        [CreatedAt]
+        public DateTimeOffset CreatedAt { get; set; }
 
-        ///// <summary>
-        ///// Stores the last update moment
-        ///// </summary>
-        //public DateTimeOffset UpdatedAt { get; set; }
+        /// <summary>
+        /// Stores the last update moment
+        /// </summary>
+        [UpdatedAt]
+        public DateTimeOffset UpdatedAt { get; set; }
 
         /// <summary>
         /// Concurrency token
         /// </summary>
+        [Version]
         public string Version { get; set; }
     }
 }

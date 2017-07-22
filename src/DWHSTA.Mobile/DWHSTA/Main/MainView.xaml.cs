@@ -42,7 +42,7 @@ namespace DWHSTA.Main
                 }
             });
 
-            MessagingCenter.Subscribe<TableOrdersViewModel, string>(this, "Error", (obj, s) =>
+            MessagingCenter.Subscribe<MainViewModel, string>(this, "Error", (obj, s) =>
             {
                 DisplayAlert("Error", s, "OK");
             });
@@ -50,8 +50,8 @@ namespace DWHSTA.Main
 
         void UnsubscribeFromMessages()
         {
-            MessagingCenter.Unsubscribe<TableOrdersViewModel, TableOrder>(this, "NavigateToTableOrders");
-            MessagingCenter.Unsubscribe<TableOrdersViewModel, string>(this, "Error");
+            MessagingCenter.Unsubscribe<MainViewModel, string>(this, "NavigateToTableOrders");
+            MessagingCenter.Unsubscribe<MainViewModel, string>(this, "Error");
         }
     }
 }
