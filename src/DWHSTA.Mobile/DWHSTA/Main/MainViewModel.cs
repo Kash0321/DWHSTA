@@ -24,7 +24,7 @@ namespace DWHSTA.Main
         {
             try
             {
-                MessagingCenter.Send(this, "NavigateToTableOrders", "TableOrdersView");
+                MessagingCenter.Send(this, "NavigateToTableOrders");
             }
             catch (Exception ex)
             {

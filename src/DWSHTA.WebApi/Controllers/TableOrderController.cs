@@ -21,7 +21,8 @@ namespace DWSHTA.WebApi.Controllers
         // GET tables/TableOrder
         public IQueryable<TableOrder> GetAllTableOrders()
         {
-            return Query();
+            var retVal = Query();
+            return retVal;
         }
 
         // GET tables/TableOrder/48D68C86-6EA6-4C25-AA33-223FC9A27959
