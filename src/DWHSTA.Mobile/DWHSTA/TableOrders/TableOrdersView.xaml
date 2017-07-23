@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DWHSTA.TableOrders.TableOrdersView"
-             Title="Sala">
+             xmlns:i18n="clr-namespace:DWHSTA.Infrastructure;assembly=DWHSTA"
+             Title="{i18n:Translate Room}">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding AddTableOrder}" />
+        <ToolbarItem Text="{i18n:Translate NewTable}" Command="{Binding AddTableOrder}" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <RelativeLayout x:Name="relativeLayout">
@@ -17,7 +18,7 @@
                     CachingStrategy="RecycleElement">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Worker}" Detail="{Binding Pax}" TextColor="{Binding Status}" />
+                            <TextCell Text="{Binding TableNumberStr}" Detail="{Binding PaxStr}" />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

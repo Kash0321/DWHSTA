@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DWHSTA.Resources;
 
 namespace DWHSTA.Model
 {
@@ -25,6 +26,21 @@ namespace DWHSTA.Model
         /// Worker mainly assigned to the table
         /// </summary>
         public string Worker { get; set; }
+
+        public string TableNumberStr
+        {
+            get
+            {
+                return string.Format("{0}: {1}", Literals.Table, Table);
+            }
+        }
+        public string PaxStr
+        {
+            get
+            {
+                return string.Format("{0}: {1}", Literals.PAX, Pax);
+            }
+        }
 
         /// <summary>
         /// Table status regarding current order
