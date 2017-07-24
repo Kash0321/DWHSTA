@@ -5,7 +5,7 @@
              xmlns:i18n="clr-namespace:DWHSTA.Infrastructure;assembly=DWHSTA"
              Title="{i18n:Translate Room}">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="{i18n:Translate NewTable}" Command="{Binding AddTableOrder}" />
+        <ToolbarItem Text="{i18n:Translate NewTable}" Command="{Binding AddTableOrderCommand}" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <RelativeLayout x:Name="relativeLayout">
