@@ -14,13 +14,6 @@ namespace DWHSTA.Infrastructure
     public class BaseViewModel : INotifyPropertyChanged
     {
         /// <summary>
-        /// Inicializa una instancia de <see cref="BaseViewModel"/>
-        /// </summary>
-        public BaseViewModel()
-        {
-        }
-
-        /// <summary>
         /// Evento al que se suscriben las vistas medinte su mecanismo de bindeo, para actualizar la presentación
         /// en función de los cambios que se producen en el ViewModel
         /// </summary>
