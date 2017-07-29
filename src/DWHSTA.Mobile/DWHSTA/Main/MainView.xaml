@@ -18,19 +18,19 @@
         </Grid.ColumnDefinitions>
         <Grid.Children>
             <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
-                <ifr:CommandableImage Command="{Binding NavigateToRoomCommand}" Source="room.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:CommandableImage>
+                <ifr:ImageButton Command="{Binding NavigateToRoomCommand}" Source="room.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:ImageButton>
                 <Label Text="{i18n:Translate Room}" XAlign="Center" />
             </StackLayout>
             <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
-                <ifr:CommandableImage Source="kitchen.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:CommandableImage>
+                <ifr:ImageButton Source="kitchen.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:ImageButton>
                 <Label Text="{i18n:Translate Kitchen}" XAlign="Center" />
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
-                <ifr:CommandableImage Source="bar.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:CommandableImage>
+                <ifr:ImageButton Source="bar.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:ImageButton>
                 <Label Text="{i18n:Translate Bar}" XAlign="Center" />
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
-                <ifr:CommandableImage Source="config.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:CommandableImage>
+                <ifr:ImageButton Source="config.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></ifr:ImageButton>
                 <Label Text="{i18n:Translate Config}" XAlign="Center" />
             </StackLayout>
         </Grid.Children>

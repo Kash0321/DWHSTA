@@ -41,7 +41,7 @@
     </Compile>
     <Compile Include="Infrastructure\BaseViewModel.cs" />
     <Compile Include="Infrastructure\Check.cs" />
-    <Compile Include="Infrastructure\CommandableImage.cs" />
+    <Compile Include="Infrastructure\ImageButton.cs" />
     <Compile Include="Infrastructure\ILocalize.cs" />
     <Compile Include="Infrastructure\PlatformCulture.cs" />
     <Compile Include="Infrastructure\TranslateExtension.cs" />
