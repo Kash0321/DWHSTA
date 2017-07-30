@@ -1,4 +1,5 @@
 ﻿using DWHSTA.Model;
+using DWHSTA.NewTableOrder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,20 +49,20 @@ namespace DWHSTA.TableOrders
                 DisplayAlert("Error", s, "OK");
             });
 
-            //MessagingCenter.Subscribe<TableOrdersViewModel, string>(this, "NavigateToNewExpense", async (obj, s) =>
-            //{
-            //    if (s == "NewExpenseView")
-            //    {
-            //        await Navigation.PushAsync(new NewTableOrderView());
-            //    }
-            //});
+            MessagingCenter.Subscribe<TableOrdersViewModel, string>(this, "NavigateToNewTableOrder", async (obj, s) =>
+            {
+                if (s == "NewTableOrderView")
+                {
+                    await Navigation.PushAsync(new NewTableOrderView());
+                }
+            });
         }
 
         void UnsubscribeFromMessages()
         {
             MessagingCenter.Unsubscribe<TableOrdersViewModel, TableOrder>(this, "NavigateToDetail");
             MessagingCenter.Unsubscribe<TableOrdersViewModel, string>(this, "Error");
-            MessagingCenter.Unsubscribe<TableOrdersViewModel, string>(this, "NavigateToNewExpense");
+            MessagingCenter.Unsubscribe<TableOrdersViewModel, string>(this, "NavigateToNewTableOrder");
         }
     }
 }

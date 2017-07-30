@@ -36,16 +36,16 @@ namespace DWHSTA.TableOrders
         {
             TableOrders = new ObservableCollection<TableOrder>();
             GetTableOrdersCommand = new Command(async () => await GetTableOrdersAsync());
-            AddTableOrderCommand = new Command(() => AddTableOrder());
+            AddTableOrderCommand = new Command(() => NavigateToNewTableOrder());
             GetTableOrdersAsync();
 
-            MessagingCenter.Subscribe<NewTableOrderViewModel, object[]>(this, "AddTableOrder", async (obj, tableOrderData) =>
-            {
-                var tableOrder = tableOrderData[0] as TableOrder;
-                TableOrders.Add(tableOrder);
+            //MessagingCenter.Subscribe<NewTableOrderViewModel, object[]>(this, "AddTableOrder", async (obj, tableOrderData) =>
+            //{
+            //    var tableOrder = tableOrderData[0] as TableOrder;
+            //    TableOrders.Add(tableOrder);
 
-                await DependencyService.Get<ITableOrderService>().AddTableOrderAsync(tableOrder);
-            });
+            //    await DependencyService.Get<ITableOrderService>().AddTableOrderAsync(tableOrder);
+            //});
         }
 
         TableOrder selectedTableOrder;
@@ -94,7 +94,7 @@ namespace DWHSTA.TableOrders
                 IsBusy = false;
             }
         }
-        void AddTableOrder()
+        void NavigateToNewTableOrder()
         {
             if (IsBusy)
                 return;
